@@ -12,7 +12,7 @@ public class HlavniProgram {
         zofka.setPenColor(Color.black);
         zofka.setPenWidth(7);
 
-        zofka.setLocation(100,150);
+        /*zofka.setLocation(100,150);
         nakresliPrasatko(zofka);
 
         zofka.setLocation(350,150);
@@ -24,9 +24,51 @@ public class HlavniProgram {
 
         zofka.setLocation(700,120);
         zofka.turnLeft(45);
+        nakresliSlunicko(zofka);*/
+
+        zofka.setLocation(200, 60);
         nakresliSlunicko(zofka);
 
+        zofka.setLocation(100, 200);
+        zofka.turnRight(90);
+        for (int i = 0; i < 5; i++) {
+            nakresliDomecek(zofka);
+            zofka.turnLeft(45);
+            zofka.penUp();
+            zofka.move(50);
+            zofka.penDown();
+        }
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(250);
+        zofka.turnRight(90);
+        zofka.move(150);
+        zofka.penDown();
+        zofka.turnLeft(180);
+        nakresliDomecek(zofka);
 
+        zofka.setLocation(100,450);
+        zofka.turnLeft(45);
+        nakresliDomecek(zofka);
+
+        zofka.setLocation(400, 530);
+        zofka.turnLeft(135);
+        nakresliPrasatko(zofka);
+
+
+
+
+    }
+
+    private static void nakresliDomecek(Turtle zofka) {
+        for (int i = 0; i < 4; i++) {
+            zofka.move(100);
+            zofka.turnRight(90);
+        }
+        zofka.turnLeft(45);
+        zofka.move(70.7106781);
+        zofka.turnRight(90);
+        zofka.move(70.7106781);
     }
 
     private static void nakresliSlunicko(Turtle zofka) {
