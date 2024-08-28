@@ -56,8 +56,106 @@ public class HlavniProgram {
         nakresliPrasatko(zofka);
 
 
+        zofka.setLocation(100,750);
+        zofka.turnRight(150);
 
+        nakresliM(zofka);
 
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(80);
+        zofka.turnLeft(180);
+        zofka.penDown();
+
+        nakresliO(zofka);
+
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(100);
+        zofka.turnLeft(90);
+        zofka.penDown();
+
+        nakresliN(zofka);
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnRight(90);
+        zofka.penDown();
+
+        nakresliI(zofka);
+
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.penDown();
+
+        nakresliK(zofka);
+
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(140);
+        zofka.penDown();
+        zofka.turnRight(70);
+
+        nakresliA(zofka);
+
+    }
+
+    private static void nakresliA(Turtle zofka) {
+        zofka.move(130);
+        zofka.turnRight(180);
+        zofka.move(130);
+        zofka.turnLeft(140);
+        zofka.move(130);
+        zofka.turnRight(180);
+        zofka.move(50);
+        zofka.turnRight(70);
+        zofka.move(50);
+    }
+
+    private static void nakresliK(Turtle zofka) {
+        zofka.move(60);
+        zofka.turnRight(135);
+        zofka.move(83);
+        zofka.turnLeft(180);
+        zofka.move(83);
+        zofka.turnRight(90);
+        zofka.move(83);
+        zofka.turnLeft(180);
+        zofka.move(83);
+        zofka.turnRight(135);
+        zofka.move(60);
+    }
+
+    private static void nakresliI(Turtle zofka) {
+        zofka.move(120);
+    }
+
+    private static void nakresliN(Turtle zofka) {
+        zofka.move(120);
+        zofka.turnRight(145);
+        zofka.move(150);
+        zofka.turnLeft(145);
+        zofka.move(120);
+    }
+
+    private static void nakresliO(Turtle zofka) {
+        for (int i = 0; i < 18; i++) {
+            zofka.turnRight(20);
+            zofka.move(21);
+        }
+    }
+
+    private static void nakresliM(Turtle zofka) {
+        zofka.move(120);
+        zofka.turnRight(145);
+        zofka.move(80);
+        zofka.turnLeft(110);
+        zofka.move(80);
+        zofka.turnRight(145);
+        zofka.move(120);
     }
 
     private static void nakresliDomecek(Turtle zofka) {
